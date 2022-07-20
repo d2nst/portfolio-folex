@@ -131,3 +131,38 @@ table {
 img {
   vertical-align: top;
 }
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sprite {
+  background: url(../images/sprite.png) no-repeat;
+  text-indent: -99999em;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+}
+
+.big {
+  padding: 0 37px;
+  line-height: 60px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.orange {
+  background-color: #ffba00;
+  color: #111c26;
+}

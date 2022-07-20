@@ -10,6 +10,52 @@ body {
   line-height: 32px;
   color: #7c858b;
 }
+
+/* Layout */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 47px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.header nav .logo span {
+  font-size: 13px;
+  color: #fff;
+  margin-left: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.header nav ul {
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header nav ul li {
+  margin-left: 45px;
+}
+.header nav ul li a {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .fixed-nav {
   position: fixed;
   top: 0;
@@ -20,4 +66,103 @@ body {
 .swiper {
   width: 100%;
   height: 100%;
+}
+
+.swiper-slide {
+  background: no-repeat center center/cover;
+  padding-top: 300px;
+  z-index: 1;
+}
+.swiper-slider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.swiper-slide.slide1 {
+  background-image: url(../images/slide1.jpg);
+}
+
+.swiper-slide.slide2 {
+  background-image: url(../images/slide2.jpg);
+}
+
+.swiper-slide.slide3 {
+  background-image: url(../images/slide3.jpg);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 89px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #020405;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next {
+  margin-left: 544px;
+}
+.swiper-button-prev {
+  margin-left: -544px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+/* slider btn arrow */
+.big-arrow-left {
+  width: 27px;
+  height: 12px;
+  background-position: 0 0;
+}
+
+.big-arrow-right {
+  width: 27px;
+  height: 12px;
+  background-position: -37px 0;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #ffba00;
+}
+.swiper-button-prev:hover .big-arrow-left,
+.swiper-button-next:hover .big-arrow-right {
+  background-position-y: -18px;
+}
+
+/* Main-page slogan */
+.slogan {
+  margin-left: 100px;
+}
+
+.slogan h2 {
+  font-size: 95px;
+  line-height: 90px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+}
+
+.slogan p {
+  margin: 15px 0 38px;
+  color: #b1bfcc;
+}
+
+.sm-arrow-right {
+  width: 18px;
+  height: 10px;
+  background-position: -74px 0;
+  margin-left: 18px;
 }

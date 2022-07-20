@@ -1,0 +1,23 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* font-family: 'Lato', sans-serif; */
+
+/* typography */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7c858b;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+/* Main Page Slide */
+.swiper {
+  width: 100%;
+  height: 100%;
+}

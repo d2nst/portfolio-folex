@@ -166,3 +166,30 @@ button {
   background-color: #ffba00;
   color: #111c26;
 }
+
+.section_tt {
+  font-size: 95px;
+  line-height: 90px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.contents p {
+  margin-bottom: 40px;
+}
+
+/*  */
+.bright-bg .section_tt {
+  color: #0b131a;
+}
+.dark-bg .section_tt {
+  color: #fff;
+}
+
+.bright-bg .contents p {
+  color: #7c858b;
+}
+.dark-bg .contents p {
+  color: #b1bfcc;
+}

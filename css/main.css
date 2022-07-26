@@ -28,6 +28,8 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 10;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0);
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .header nav .logo span {
@@ -58,6 +60,34 @@ body {
   font-size: 13px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+/* nav 클래스명 fixed */
+.header nav.fixed {
+  background-color: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header nav.fixed .logo span,
+.header nav.fixed ul li a {
+  color: #0b131a;
+}
+.header nav.fixed ul li a:hover {
+  color: #ffba00;
+}
+
+.toggle-btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fixed .toggle-btn {
+  border-color: #ececed;
 }
 
 .fixed-nav {
@@ -440,3 +470,5 @@ body {
   height: 27px;
   background-position: -27px -40px;
 }
+
+/* nav 클래스명 fixed */

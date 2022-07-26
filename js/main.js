@@ -18,12 +18,12 @@ $(document).ready(function () {
 
         if (destination > 1) {
           $('.fixed-nav').fadeIn();
-          $('.header nav').addClass('active');
+          $('.header nav').addClass('fixed');
           $('.logo img').attr('src', './images/logo-dark.png');
           $('.toggle-btn img').attr('src', './images/menu_icon-dark.png');
         } else {
-          // $('.fixed-nav').fadeOut();
-          $('.header nav').removeClass('active');
+          $('.fixed-nav').fadeOut();
+          $('.header nav').removeClass('fixed');
           $('.logo img').attr('src', './images/logo.png');
           $('.toggle-btn img').attr('src', './images/menu_icon.png');
         }
@@ -49,18 +49,6 @@ $(document).ready(function () {
             .eq(destination - 1)
             .addClass('active');
         }
-        // if (destination === 6) {
-        //   $('.back_to_top').addClass('active');
-        //   $('.fixed-nav').fadeOut();
-        // } else {
-        //   $('.back_to_top').removeClass('active');
-        // }
-
-        // $('.fixed-nav').find('a').removeClass('active');
-        // $('.fixed-nav')
-        //   .find('a')
-        //   .eq(destination - 1)
-        //   .addClass('active');
       },
     });
     //methods
@@ -85,4 +73,6 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // 윈도우의 스크롤이 생기면 할 일 : 그 양이 0보다 크면 header에 nav에 클래스명은 fixed 추가, 아니면 제거
 });

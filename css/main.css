@@ -90,6 +90,57 @@ body {
   border-color: #ececed;
 }
 
+/* 토글 메뉴 */
+.toggle-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(11, 19, 26, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.toggle-menu.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.toggle-menu .close {
+  position: absolute;
+  top: 52px;
+  right: 65px;
+  cursor: pointer;
+}
+
+.toggle-menu ul li {
+  margin-bottom: 50px;
+}
+
+.toggle-menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.toggle-menu ul li a {
+  font-size: 27px;
+  letter-spacing: 0.1;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.toggle-menu ul li a:hover {
+  color: #ffaa00;
+}
+
 .fixed-nav {
   position: fixed;
   left: 50%;

@@ -74,5 +74,11 @@ $(document).ready(function () {
     },
   });
 
-  // 윈도우의 스크롤이 생기면 할 일 : 그 양이 0보다 크면 header에 nav에 클래스명은 fixed 추가, 아니면 제거
+  // toggle menu open & close
+  $('.toggle-btn').click(function () {
+    $('.toggle-menu').addClass('active');
+  });
+  $('.toggle-menu .close').click(function () {
+    $('.toggle-menu').removeClass('active');
+  });
 });

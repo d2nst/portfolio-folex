@@ -46,8 +46,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  max-width: 1140px;
-  width: 100%;
+  max-width: 1170px;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
 }
@@ -186,15 +186,15 @@ body {
   height: 100%;
 }
 
-.swiper-slide {
+.main-slides .swiper-slide {
   background: no-repeat center center/cover;
   z-index: 1;
 }
-.swiper-slide .container {
+.main-slides .swiper-slide .container {
   padding-top: 300px;
 }
 
-.swiper-slide::after {
+.main-slides .swiper-slide::after {
   content: '';
   position: absolute;
   left: 0;
@@ -522,4 +522,187 @@ body {
   background-position: -27px -40px;
 }
 
-/* nav 클래스명 fixed */
+/* -------***------- ABOUT -------***------- */
+.subpage-banner {
+  background: no-repeat center center/cover;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.subpage-banner::after {
+  content: '';
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.subpage-banner.about {
+  background-image: url(../images/banner-about.png);
+}
+
+.subpage-banner .contents {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.subpage-banner h2 {
+  font-size: 95px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin-bottom: 28px;
+  line-height: 95px;
+}
+
+.subpage-banner p {
+  font-size: 18px;
+  color: #b1bfcc;
+  margin-bottom: 0;
+}
+
+/* Subpage - toggle-btn */
+.subpage .toggle-btn {
+  background-color: #ffaa00;
+}
+
+/* Subpage - Main Contents */
+.our-story {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-story > div {
+  width: 50%;
+  height: 700px;
+}
+
+.story-img,
+.do-img {
+  background: no-repeat center center/cover;
+  text-indent: -9999em;
+}
+
+.story-contents,
+.do-contents {
+  padding: 0 88px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.story-img {
+  background-image: url(../images/ourstory-img.png);
+  order: 1;
+}
+
+.story-contents {
+  order: 2;
+}
+
+.do-contents {
+  order: 3;
+}
+
+.do-img {
+  background-image: url(../images/do-img.png);
+  order: 4;
+}
+
+.our-story > .contents {
+  margin-top: 40px;
+}
+
+.our-story .contents h2 {
+  font-size: 65px;
+  color: #0b131a;
+}
+
+.our-story > .contents p {
+  margin-bottom: 0;
+}
+
+/* Subpage - people says */
+.people-says {
+  background-color: #f9f9f9;
+}
+
+.testimonial-slides .swiper-slide {
+  padding: 225px 0 130px;
+}
+.testimonial-slides .contents {
+  width: 770px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial-slides .contents h2 {
+  font-size: 65px;
+  color: #0b131a;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 65px;
+  margin-bottom: 30px;
+}
+
+.reviewer h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #111c26;
+  margin: 20px 0 2px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.reviewer p {
+  font-size: 16px;
+  color: #ffaa00;
+}
+
+/* Subpage - need help */
+.help {
+  background-color: #0b131a;
+  padding: 190px 0 115px;
+}
+
+.help .contents {
+  width: 770px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.help .contents h2 {
+  font-size: 65px;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 65px;
+  margin-bottom: 15px;
+}
+
+/* *** Subpage swiper btn ->
+ 화살표 꾸미기 위해 서브페이지는 따로 설정했음 *** */
+.sub_btn,
+.sub_btn {
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 89px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: transparent;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sub_btn .big-arrow-left,
+.sub_btn .big-arrow-right {
+  background-position-y: -18px;
+}

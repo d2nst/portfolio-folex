@@ -4,90 +4,90 @@
     "desc": "World Photography",
     "type": "world",
     "imgUrl": "images/img/world-1.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "pizza",
     "desc": "Food Photography",
     "type": "food",
     "imgUrl": "images/img/food-1.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "volleyball",
     "desc": "Sport Photography",
     "type": "sport",
     "imgUrl": "images/img/sport-1.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "icecream",
     "desc": "Food Photography",
     "type": "food",
     "imgUrl": "images/img/food-2.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "friend",
     "desc": "Life Photography",
     "type": "life",
     "imgUrl": "images/img/life-1.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "mountain",
     "desc": "Life Photography",
     "type": "life",
     "imgUrl": "images/img/life-2.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "seoul",
     "desc": "World Photography",
     "type": "world",
     "imgUrl": "images/img/world-2.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "surfing",
     "desc": "Sport Photography",
     "type": "sport",
     "imgUrl": "images/img/sport-2.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "cook",
     "desc": "Food Photography",
     "type": "food",
     "imgUrl": "images/img/food-3.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "venice",
     "desc": "World Photography",
     "type": "world",
     "imgUrl": "images/img/world-3.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "camping",
     "desc": "Life Photography",
     "type": "life",
     "imgUrl": "images/img/life-3.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "golf",
     "desc": "Sport Photography",
     "type": "sport",
     "imgUrl": "images/img/sport-3.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   },
   {
     "title": "tea ceremony",
     "desc": "Life Photography",
     "type": "life",
     "imgUrl": "images/img/life-4.jpg",
-    "projectLink": ""
+    "projectLink": "../portfolio-single.html"
   }
 ]

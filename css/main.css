@@ -337,27 +337,6 @@ body {
   padding: 27px 0 0;
 }
 
-.title_bar {
-  position: relative;
-}
-
-.title_bar::before {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 91px;
-  background-color: #ffba00;
-  bottom: calc(100% + 40px);
-}
-
-.title_bar.center::before {
-  left: 50%;
-  transform: translateX(-50%);
-}
-.title_bar.left::before {
-  left: 0;
-}
-
 /* story scroll */
 .story .scroll_down {
   position: absolute;
@@ -550,7 +529,6 @@ body {
 
 .subpage-banner .contents {
   text-align: center;
-  margin-top: 40px;
 }
 
 .subpage-banner h2 {
@@ -615,10 +593,6 @@ body {
 .do-img {
   background-image: url(../images/do-img.png);
   order: 4;
-}
-
-.our-story > .contents {
-  margin-top: 40px;
 }
 
 .our-story .contents h2 {
@@ -807,4 +781,95 @@ body {
 
 .subpage-banner.portfolio {
   background-image: url(../images/banner-work.jpg);
+}
+
+/* -------***------- Single - PORTFOLIO -------***------- */
+.single-info {
+  padding: 125px 0 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.substate {
+  background-color: #fbf9f6;
+  width: 570px;
+  padding: 63px 0 74px 70px;
+}
+
+.substate dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.substate dl dt {
+  width: 23%;
+  margin-bottom: 21px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #0b131a;
+  font-weight: 700;
+}
+.substate dl dd {
+  width: 64%;
+  font-size: 16px;
+}
+
+.single-info .desc {
+  width: 500px;
+}
+
+.single-info h2 {
+  font-size: 65px;
+  color: #0b131a;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+
+.page_nav {
+  width: 177px;
+  height: 36px;
+  border-radius: 18px;
+  border: 1px solid #ececed;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 39px;
+}
+
+.page_nav a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_nav a.prev {
+  border-right: 1px solid #ececed;
+}
+
+.page_nav a span {
+  background-position-y: -18px;
+  opacity: 0.15;
+}
+
+.page_nav a:hover span {
+  opacity: 1;
+}
+
+/* single-photos */
+.single-photos ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-photos ul li {
+  width: 33.33333%;
+  height: 700px;
+  background: no-repeat center center/cover;
+  text-indent: -9999em;
+}
+
+.single-photos ul li.double {
+  width: 66.66666%;
 }

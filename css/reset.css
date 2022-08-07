@@ -179,7 +179,6 @@ button {
   margin-bottom: 40px;
 }
 
-/*  */
 .bright-bg .section_tt {
   color: #0b131a;
 }
@@ -192,4 +191,27 @@ button {
 }
 .dark-bg .contents p {
   color: #b1bfcc;
+}
+
+/* title bar */
+.title_bar {
+  position: relative;
+  padding-top: 40px;
+}
+
+.title_bar::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 91px;
+  background-color: #ffba00;
+  bottom: 100%;
+}
+
+.title_bar.center::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title_bar.left::before {
+  left: 0;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABOUT - Portfolio(3)</title>
+    <title>Portfolio - Portfolio(3)</title>
 
     <!-- FAVICON -->
     <link
@@ -98,16 +98,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
-    <!-- Main page swiper -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
     <!-- My CSS & JS -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- mixitup -->
+    <script src="js/mixitup.min.js"></script>
+
     <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
   </head>
   <body>
     <!-- *** Header Start *** -->
@@ -148,134 +145,36 @@
       </div>
     </div>
 
-    <!-- *** Subpage-banner ABOUT *** -->
-    <div class="subpage-banner about">
+    <!-- *** Subpage-banner PORTFOLIO *** -->
+    <div class="subpage-banner portfolio">
       <div class="contents">
-        <h2 class="title_bar center">About</h2>
+        <h2 class="title_bar center">Work</h2>
         <p>My name KyoungJin Kim. I am Web Publisher & Traveller.</p>
       </div>
     </div>
 
     <!-- *** Main Contents *** -->
     <div class="main-contents">
-      <!-- *** our story start ***  -->
-      <div class="our-story">
-        <div class="story-img">our story image</div>
-        <div class="story-contents">
-          <div class="contents">
-            <h2 class="section_tt title_bar left">our story</h2>
-            <p>
-              Nullam maximus posuere fringilla aliquam vel blandit erat mattis
-              magna cras vitae maecenas vel augue eu sapien semper tempor
-              pellentesque efficitur sed tellus a sollicitud tincidunt
-              consectetur interdum pellentesque.
-            </p>
-          </div>
-        </div>
-        <div class="do-img">what i do image</div>
-        <div class="do-contents">
-          <div class="contents">
-            <h2 class="section_tt title_bar left">what I do?</h2>
-            <p>
-              Nullam maximus posuere fringilla aliquam vel blandit erat mattis
-              magna cras vitae maecenas vel augue eu sapien semper tempor
-              pellentesque efficitur sed tellus a sollicitud tincidunt
-              consectetur interdum pellentesque.
-            </p>
-          </div>
-        </div>
+      <div class="filters">
+        <button type="button" data-filter="all" class="active">All</button>
+        <button type="button" data-filter=".world">World</button>
+        <button type="button" data-filter=".sport">Sport</button>
+        <button type="button" data-filter=".life">Life</button>
+        <button type="button" data-filter=".food">Food</button>
       </div>
 
-      <!-- *** people says start *** -->
-      <div class="people-says">
-        <div class="testimonial-slides swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="contents">
-                <h2 class="title_bar center">people says</h2>
-                <p>
-                  Nullam maximus posuere fringilla aliquam vel blandit erat
-                  mattis magna cras vitae maecenas vel augue eu sapien semper
-                  tempor pellentesque efficitur sed tellus a sollicitud
-                  tincidunt consectetur interdum pellentesque.
-                </p>
-                <div class="reviewer">
-                  <img
-                    src="./images/reviewer-01.png"
-                    alt="cindy"
-                    class="icon"
-                  />
-                  <h4>cindy</h4>
-                  <p>Designer at Hostro Inc.</p>
-                </div>
-              </div>
-            </div>
-            <!-- // 1 slide // -->
-            <div class="swiper-slide">
-              <div class="contents">
-                <h2 class="title_bar center">people says</h2>
-                <p>
-                  Nullam maximus posuere fringilla aliquam vel blandit erat
-                  mattis magna cras vitae maecenas vel augue eu sapien semper
-                  tempor pellentesque efficitur sed tellus a sollicitud
-                  tincidunt consectetur interdum pellentesque.
-                </p>
-                <div class="reviewer">
-                  <img
-                    src="./images/reviewer-02.png"
-                    alt="robert"
-                    class="icon"
-                  />
-                  <h4>robert</h4>
-                  <p>Fronte-nd developer at Google.</p>
-                </div>
-              </div>
-            </div>
-            <!-- // 2 slide // -->
-            <div class="swiper-slide">
-              <div class="contents">
-                <h2 class="title_bar center">people says</h2>
-                <p>
-                  Nullam maximus posuere fringilla aliquam vel blandit erat
-                  mattis magna cras vitae maecenas vel augue eu sapien semper
-                  tempor pellentesque efficitur sed tellus a sollicitud
-                  tincidunt consectetur interdum pellentesque.
-                </p>
-                <div class="reviewer">
-                  <img
-                    src="./images/reviewer-03.png"
-                    alt="diana"
-                    class="icon"
-                  />
-                  <h4>diana</h4>
-                  <p>Artist.</p>
-                </div>
-              </div>
-            </div>
-            <!-- // 3 slide // -->
-          </div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev sub_btn">
-            <span class="sprite big-arrow-left">prev btn</span>
-          </div>
-          <div class="swiper-button-next sub_btn">
-            <span class="sprite big-arrow-right">next btn</span>
-          </div>
-        </div>
+      <div class="portfolio_list">
+        <!-- <li
+          style="background-image: url(./images/img/world-1.jpg)"
+          class="item world"
+        >
+          <h2 class="title_bar center">moroco</h2>
+          <p>World Photography</p>
+          <a href="" class="big btn orange">view project</a>
+        </li> -->
       </div>
-      <!-- *** Need Help ***  -->
-      <div class="help">
-        <div class="contents">
-          <h2 class="title_bar center">need help?</h2>
-          <p>
-            Nullam maximus posuere fringilla aliquam vel blandit erat mattis
-            magna cras vitae.
-          </p>
-          <a href="" class="big btn orange">contact </a>
-        </div>
+      <div class="loadmore">
+        <button id="loadmore">load more</button>
       </div>
     </div>
 

@@ -59,7 +59,6 @@ $(document).ready(function () {
   } // fullpage end
 
   // Main Page Slide
-
   if ($('.main-slides').length > 0) {
     const swiper = new Swiper('.main-slides', {
       // Optional parameters
@@ -137,7 +136,7 @@ $(document).ready(function () {
       {
         scrollTop: 0,
       },
-      800,
+      900,
       'easeOutQuint'
     );
   });
